@@ -1,0 +1,96 @@
+-------------------------------------------------------------------------------
+Arithmetic Operators
+-------------------------------------------------------------------------------
+01 javascript arithmetic operators
+-- arithmetic operators perform arithmetic on numbers (literals or variables) 
+-- a typical arithmetic operation operates on two numbers 
+    -- this two numbers can be literals > x = 4 + 2;
+    -- this two numbers can be variables > x = a + b; 
+    -- expressions > x = (100 + 40) * a; 
+
+02 there are eight arithmetic operators - 
+-- (+)  - addition, add numbers > x = 10 + 20
+-- (-)  - subtraction, subtract numbers > x = 20 - 10
+-- (*)  - multiplication, multiplies numbers > x = 10 * 5
+-- (/)  - division, divides numbers > x = 10 / 5
+-- (%)  - modulus (remainder) > x = 10 % 5
+-- (++) - increment, this operator increments numbers 
+-- (--) - decrement, this operator decrements numbers 
+-- (**) - exponentiation (ES2016), first operand to the power of second operand
+        - (x ** y) produces the same result as (Math.pow(x, y))
+
+03 operator and operands 
+-- the numbers (in an arithmetic operation) are called (operands) 
+-- the operation (to be performed between the two operands) is defined by an (operator)
+-- operands can be (literal | variable | expression)
+-- like > x = (100 + 11) * a; 
+    -- here (x, 100, 11, a) are operands 
+    -- and ()=, +, *) are operators 
+
+04 operator precedence
+-- operator precedence describes the orders in which operations are performed in 
+    an arithmetic expression 
+-- multiplication and division have higher precedence than addition and subtraction 
+-- the precedence can be changed by using parentheses 
+-- when using parentheses, the operations inside the parentheses are computed first 
+-- when many operations have the same precedence, they are computed from let to right
+
+-------------------------------------------------------------------------------
+Assignment Operators
+-------------------------------------------------------------------------------
+01 javascript assignment operators 
+-- assignment operators assign values to javascript variables 
+-- 1. (=)       - x = y         - x = y         - assignment operator assign a value to a variable
+-- 2. (+=)      - x += y        - x = x + y     - add and assign operator adds then assign result to the variable 
+-- 3. (-=)      - x -= y        - x = x - y     - subtract and assign operator subtracts then assign result to the variable 
+-- 4. (*=)      - x *= y        - x = x * y     - multiply and assign operator multiplies then assign result to the variable 
+-- 5. (/=)      - x /= y        - x = x / y     - divide and assign operator divides then assign result to the variable
+-- 6. (%=)      - x %= y        - x = x % y     - remainder and assign operator assign remainder to the variable 
+-- 7. (**=)     - x **= y       - x = x ** y    
+
+02 shift Assignment operators 
+-- this are bitwise shift assignment operators 
+-- 1. (<<=)        - x <<= y           - x = x << y    - this operator first (left shifts) then assign the value to the variable
+-- 2. (>>=)        - x >>= y           - x = x >> y    - this operator first (right shifts) then assign the value to the variable (signed)
+-- 3. (>>>=)       - x >>>= y          - x = x >>> y   - this operator first (right shifts) then assign the value to the variable (unsigned)
+
+03 logical assignment operators 
+-- this are bitwise logical assignment operators
+-- 4. (&=)         - x &= y            - x = x & y     - this operator ANDs a value 
+-- 5. (^=)         - x ^= y            - x = x ^ y     - this operator
+-- 6. (|=)         - x |= y            - x = x | y     - this operator ORs a value
+
+-------------------------------------------------------------------------------
+Comparison Operators
+-------------------------------------------------------------------------------
+01 comparison operators 
+-- comparison and logical operators are used to test for (true or false) 
+-- comparison operators are used in logical statements to determine equality or difference between variables or values 
+-- 1. (==)      - equal to                  - 8 == 8            - true
+                                            - 5 == 8            - false
+                                            - 5 == '5'          - true  (types are not equal)
+-- 2. (===)     - equal value and type      - 8 === 8           - true
+                                            - 5 === 8           - false
+                                            - 8 === '8'         - false (types are not equal)
+                                            
+02 logical operators 
+03 conditional (ternary) operators 
+04 the Nullish Coalescing operator (??)
+05 comparing different types 
+
+-------------------------------------------------------------------------------
+Bitwise Operators
+-------------------------------------------------------------------------------
+01 javascript bitwise Operators
+02 javascript uses 32 bits bitwise operands 
+03 the AND operator 
+04 the OR operator 
+05 the XOR operator 
+06 the NOT operator 
+07 the (Zero Fill) bitwise LEFT-SHIFT operator (<<)
+08 the (Sign Preserving) bitwise RIGHT-SHIFT operator (>>)
+09 hte (Zero Fill) bitwise RIGHT-SHIFT operator (>>>)
+
+10 binary numbers 
+11 converting decimal to binary 
+12 converting binary to decimal 

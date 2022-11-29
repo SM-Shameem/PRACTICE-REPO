@@ -1,5 +1,5 @@
-let out1A = document.createElement('div');
-out1A.setAttribute('id', 'styleOne');
-document.body.appendChild(out1A);
+const out = document.createElement('div');
+document.body.appendChild(out);
+out.setAttribute('id', 'styleOne');
 
-out1A.innerHTML += 'javascript ......';
+out.innerHTML = 'JavaScript';
