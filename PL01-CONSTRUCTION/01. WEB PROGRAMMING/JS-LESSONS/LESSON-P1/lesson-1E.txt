@@ -1,11 +1,11 @@
 ---------------------------------------------------------------------------
-JavaScript Variables 
+JavaScript Variables (keyword)
 ---------------------------------------------------------------------------
 01 4 ways to declare a javascript variable 
     - using (var) 
     - using (let)
     - using (const)
-    - using nothing 
+    - using only identifier
 
 02 variables are containers for storing data (storing data values) 
 
@@ -26,6 +26,8 @@ JavaScript Variables
 -- in this case that identifier works as like the variable defined with (var)
 
 ---------------------------------------------------------------------------
+JavaScript Variables (Identifiers)
+---------------------------------------------------------------------------
 06 declaring a javascript variable 
 -- creating a variable in javascript is called declaring a variable 
 -- you declare a javascript variable with the (var and let) keyword 
@@ -42,6 +44,8 @@ JavaScript Variables
    its value 
 -- you cannot re-declare a variable declared with (let | const) 
 
+---------------------------------------------------------------------------
+JavaScript Variables (Naming Convention)
 ---------------------------------------------------------------------------
 09 javascript identifiers 
 -- all javascript variables must be identified with unique names 
@@ -70,6 +74,8 @@ JavaScript Variables
    professional programmers is to use it as an alias for, private (hidden) variable 
 
 ---------------------------------------------------------------------------
+JavaScript Variables (Assigning Value)
+---------------------------------------------------------------------------
 12 assigning value to variable 
 -- to assign a value to the variable, use the equal (=) sign 
 -- you can also assign a value to the variable when you declare it 
@@ -94,7 +100,7 @@ JavaScript Variables
 -- if you put a number in quotes, it will be treated as a text string 
 
 ---------------------------------------------------------------------------
-JavaScript (let) Keyword 
+JavaScript Variables (let Keyword)
 ---------------------------------------------------------------------------
 01 the (let) keyword was introduced in ES6 (2015) 
 -- variables defined with (let) cannot be re-declared 
@@ -137,7 +143,7 @@ JavaScript (let) Keyword
    referenceError 
 
 ---------------------------------------------------------------------------
-JavaScript (const) Keyword
+JavaScript Variables (const Keyword)
 ---------------------------------------------------------------------------
 01 the (const) keyword was introduced in ES6 (2015) 
 -> variables defined with (const) cannot be re-declared 

@@ -1,0 +1,109 @@
+---------------------------------------------------------------------------
+JavaScript Scope
+---------------------------------------------------------------------------
+01 javascript variables | lifetime of variable
+-> in javascript, (object | functions) are also variables 
+-- scope determines the accessibility of (variables | objects | functions)
+   from different parts of the code 
+-> the lifetime of a javascript variable starts when it is declared
+-- function (local) variables are deleted when the function is 
+   completed 
+-- in a web browser, (global) variables are deleted when you close the 
+   (browser window or tab)
+
+02 javascript scope
+-- scope determines the accessibility (visibility) of variables 
+-- javascript has 3 (three) types of scope (block | local | function)
+
+03 block scope 
+-- before ES6 (2015), javascript has only (global scope) and (function scope)
+-- ES6 introduced two important new javascript keyword (let | const) 
+-- these two keywords provide (block scope) in javascript 
+-- variables declared inside { } block cannot be accessed from outside block
+-- variables declared with the (var) keyword can not have (block scope) 
+-- variables declared inside { } block can be accessed from outside block
+
+04 local scope | function scope | arguments and parameters
+-> variables declared withing a javascript function, become (local) to function
+-- each function creates a new scope
+-- (local) variables have (function) scope, they can only be accessed from 
+   within the function and are not accessible from outside the function
+-- since local variables are only recognized inside their function, variable with 
+   the same name can be used in different functions 
+-- (local) variables are created when a function (starts) and (deleted) when 
+   the function is (completed)
+-> variables declared with (var | let | const) are quite similar when declared 
+   inside a function, they all have (function scope)
+-> function (arguments | parameters) works as (local) variables inside functions
+
+05 global javascript variables | global scope
+-> a variable declared outside a function, becomes GLOBAL
+-- a (global) variable has (global) scope, all scripts and functions on a web 
+   page can access it from
+-> variables declared with (var | let | const) are quite similar when declared
+   outside a block, they all have (global) scope 
+
+06 automatically global 
+-- assigning a value to a variable that has not been declared, it will 
+   automatically become a (global) variable 
+-- if we assign the value inside a (function) without declaration, is still 
+   a (global) variable not (local) variable of that function 
+
+07 global variable in HTML 
+-- with javascript, the (global) scope is the javascript environment 
+-- in HTML, the (global) scope is the (browser object)
+-- the (global) variables defined with the (var) keyword belong to the 
+   (window object)
+-- (global) variables defined with the (let) keyword do not belong to 
+   the (window object) 
+-- NB: do not create (global) variables unless you intend to 
+-- NB: any (global) variables (or functions) can overwrite (window) 
+   variables (or functions)
+-- NB: any (function), including the (window) object, can overwrite your
+   (global) variables and functions  
+
+08 strict mode
+-- all modern browser running javascript in (strict) mode 
+-- in (strict) mode undeclared variables are not automatically (global)
+
+---------------------------------------------------------------------------
+JavaScript Hosting
+---------------------------------------------------------------------------
+01 javascript hosting | declarations are hoisted 
+-> hoisting is javascript's default behavior of moving declaration to the top 
+-> in javascript, a variable can be declared after it has been used 
+   in other words, a variable can be used before it has been declared 
+-- hosting is javascript default behavior of moving all declarations to the 
+   current scope (to the top of the current script of the current function)
+
+02 initialization are not hoisted
+-- javascript only hoists declaration, not hoists initialization 
+-- only declaration (var x) hoisted, not the initialization (x = 4) is hoisted
+
+03 the (let and const) keywords
+-- variables defined with (let | const) are hoisted to the top of the block,
+   but not initialized. that means, the block of code is aware of the variable,
+   but it cannot be used it has been declared 
+-- using (let) variable before it is declared will result in a (referenceError)
+-- the variable is in a (temporal dead zone) from the start of the block until
+   it is declared 
+-- using (const) variable before it is declared, is a (syntax error), so the 
+   code will simply not run 
+
+04 declare your variables at the top 
+-- hoisting is an unknown or overlooked behavior of JS to many developers
+-- if a developer doesn't understand hoisting, program may contain bugs 
+-- to avoid bugs, always declare all variables at the beginning of every scope 
+-- since that is how javascript interprets the code, it is always a good rule 
+-- NB: javascript in (strict) mode, does not allow variables to be used if 
+   they are not declared. 
+
+---------------------------------------------------------------------------
+JavaScript Strict Mode
+---------------------------------------------------------------------------
+01 the (use strict) directive 
+02 declaring (strict) mode 
+03 the (use strict) syntax 
+04 why (strict) mode 
+05 not allowed in (strict) mode 
+06 future proof

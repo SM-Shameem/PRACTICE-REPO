@@ -12,6 +12,9 @@ What Can JavaScript Do
 ---------------------------------------------------------------------------
 How to Use JavaScript  
 ---------------------------------------------------------------------------
+01 JavaScript can not use directly without embedding it to HTML
+-- though we can call direct JavaScript file (.js) through (NodeJS)
+ 
 -> internal javascript
 -- any number of scripts can be placed in a HTML document 
 -- internal script can be placed in two ways 
