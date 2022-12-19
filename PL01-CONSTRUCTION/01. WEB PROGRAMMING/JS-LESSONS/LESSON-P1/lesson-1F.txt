@@ -101,9 +101,58 @@ JavaScript Hosting
 ---------------------------------------------------------------------------
 JavaScript Strict Mode
 ---------------------------------------------------------------------------
+-> (use strict) defines that js code should be executed in (strict mode)
+
 01 the (use strict) directive 
+-- the (use strict) directive was new in ECMAScript 5 
+-- it is not a statement, but a literal expression, ignored by earlier 
+   version of javascript 
+-- the purpose of (use strict) is to indicate that the code should be 
+   executed in (strict mode) 
+-- with (strict mode), you can not, use undeclared variables 
+-- you can use (strict mode) in all your programs. it helps you to write 
+   cleaner code, like preventing you from using undeclared variables 
+-- (use strict) is just a string, so IE9 will not throw an error even if it 
+   does not understand it 
+
 02 declaring (strict) mode 
+-- (strict) mode is declared by adding (use strict) to the beginning of a 
+   script or a function 
+-- declared at the beginning of a script, it has (global scope)
+   all code in the script will executed in (strict) mode 
+-- declared inside a function, it has local scope 
+   only the code inside the function is in (strict) mode 
+
 03 the (use strict) syntax 
+-- the syntax, for declaring strict mode, was designed to be compatible with 
+   older versions of javascript 
+-- compiling a numeric literal or a string literal in a javascript program has 
+   no side effect. it simply compiles to a non existing variables and dies.
+   (use strict) only matter to (new compiler) that understand the meaning of it.
+   
 04 why (strict) mode 
+-- strict mode makes it easier to write (secure) javascript 
+-- strict mode changes previously accepted (bad syntax) into real errors 
+-- in strict mode, any assignment to a non-writable property, a getter-only 
+   property, a non-existing property, a non-existing variable, or a 
+   non-existing object, will throw an error 
+
 05 not allowed in (strict) mode 
+-- using a variable, without declaring it, is not allowed 
+   objects are variables too
+-- using an object, without declaring it, is not allowed 
+-- deleting a variable or object is not allowed 
+-- deleting a function is not allowed 
+-- duplicating a parameter name is not allowed 
+-- octal numeric literals are not allowed 
+-- writing to a read-only property is not allowed 
+-- writing a a get-only property is not allowed 
+-- deleting an undetectable property is not allowed 
+-- the word (eval) cannot be used as a variable 
+-- the word (arguments) cannot be used a variable 
+-- the (with) statement is not allowed 
+-- for security reasons, (eval()) is not allowed to create variables in the 
+   scope from which it was called 
+-- 
+
 06 future proof

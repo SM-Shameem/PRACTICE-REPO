@@ -16,7 +16,7 @@ console.log(friendlyFunction_2());
 console.log('hello end');
 
 // Using (async and await -> instead of then and catch) .......................
-const hasMeeting = false;
+const hasMeeting = true;
 
 const meeting = new Promise((resolve, reject) => {
     if(!hasMeeting) {
@@ -60,8 +60,7 @@ async function myMeeting() {
         console.log(calendar);
     } catch {
         console.log('something wrong ......');
-    }
-    
+    }    
 }
 
 myMeeting();
