@@ -1,0 +1,50 @@
+Tabs - 
+1. Inspector 
+    -> html code (select element | search element | temporary edit document)
+    -> selected element Style 
+        (filter | temporary edit style | add new class | add style | add hover)
+    -> style properties
+        - layout
+        - computed 
+        - changes 
+        - capabilities 
+        - fonts
+        - animation
+2. Style Editor
+    -> file list (save change individual | filter file | create new file | import file)
+    -> code view (edit code)
+3. Accessibility 
+    -> option bar
+    -> role | name 
+    -> check | properties
+4. Storage
+    -> cache storage | cookies | indexed DB | local storage | session storage
+    -> data represent to selected host
+5. Debugger
+    -> source | outline 
+    -> code view (no edit)
+    -> debug panel (watch expression | breakingpoint | XHR-Event_listener-DOM_Mutation breakingpoint)
+    -> hide panel button | setting button | breakingpoint button
+    => can choose multiple breaking point 
+    => select or add watch variable
+    => after run the script from web can step by step debug, using debug buttons 
+6. Console
+    -> console tab (clear button | filter | errors-warning-logs-info-debug | css | xhr | requests | setting button | split tab)
+    -> split tab (command panel | output panel)
+    -> command panel (text editor | run-line_button-search-close)
+    -> output panel (like > clear | filter | message options)
+7. Network (online) 
+    -> status | method | domain | file | initiator | type | transferred | size | ms
+    -- clear | filter | play | new request | request blocking | search
+    -- request type (HTML | CSS | JS | XHR | FONT | IMAGE | MEDIA | WS | OTHERS)
+    -- disable case | setting | 
+
+8. Memory 
+9. Performance
+10. Application
+11. DOM
+
+-> pic an element button
+-> responsive design button
+-> dock button
+-> close button
