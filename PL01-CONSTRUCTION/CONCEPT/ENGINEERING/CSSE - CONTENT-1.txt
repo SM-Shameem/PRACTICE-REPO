@@ -1,0 +1,36 @@
+----------------------------------------------------------------
+BASIC MATHEMATICS (A-LEVEL)
+----------------------------------------------------------------
+01. Algebra 
+02. Co-ordinate Geometry 
+03. Sequence and Series 
+04. Functions 
+05. Differentiation 
+06. Integration 
+07. Trigonometry
+08. Vectors 
+
+09. Advance Algebra 
+10. Logarithms and Exponential
+11. Advance Trigonometry 
+12. Advance Differentiation 
+13. Advance Integration 
+14. Further Algebra 
+15. Further Integration 
+16. Differential Equations
+17. Advance Vectors 
+
+18. Complex Numbers
+19. Exploring Data 
+20. Representing and Interpreting Data 
+21. Probability 
+22. Discrete Random Variables 
+23. Permutations and Combinations 
+24. The Binominal Distribution 
+25. The Normal Distribution 
+26. Hypothesis Testing Using The Binominal Distribution 
+27. The Position Distribution 
+28. Continuous Random Variables 
+29. Linear Combinations of Random Variables 
+30. Sampling 
+31. Hypothesis Testing and Confidence Intervals Using The Normal Distribution

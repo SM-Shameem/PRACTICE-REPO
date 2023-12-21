@@ -1,0 +1,52 @@
+// MDN REFERENCE
+
+// Statements and Declaration 
+// ----------------------------------------------------------------------------
+// -> JavaScript applications consist of statements with an appropriate syntax. 
+// -> A single statement may span multiple lines 
+// -> Multiple statements may occur on a single line if each statement is separated by a semicolon 
+// -> This isn’t a keyword, but a combination or group of keywords | identifiers | operator | literal 
+// -> Difference between statements and declarations 
+// -> There are two kinds of constructs (statements | declarations) are two disjoint sets of grammars
+// -> In javascript, statements and declarations are 5 types  – 
+
+// Control Flow Statements
+// 1. if..else
+// 2. switch 
+// 3. break
+// 4. continue 
+// 5. return
+// 6. try..catch..finally
+// 7. throw
+
+// Iteration Statements
+// 1. while
+// 2. do..while
+// 3. for
+// 4. for..in
+// 5. for..of
+// 6. for..await..of
+
+// Other Statements 
+// 1. expression statement 
+// 2. empty statement 
+// 3. block
+// 5. label 
+// 6. debugger 
+// 7. with 
+
+// Declaring Variable
+// 1. var
+// 2. let 
+// 3. const 
+
+// Declaring Functions and Classes 
+// 1. function 
+// 2. function* 
+// 3. async..function 
+// 4. async..function* 
+// 5. class
+
+// Other Declaration 
+// 1. import 
+// 2. export 

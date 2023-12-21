@@ -1,0 +1,90 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-transform: capitalize;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+#wrapper {
+    background-color: antiquewhite;
+    width: 60%;
+    min-height: 100px;
+    margin: auto;
+    padding: 0px 10px;
+}
+
+#logo-nav {
+    min-height: 50px;
+    margin: 10px auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+#logo, #nav {
+    background-color: lightgray;
+    padding: 0px 25px;
+    
+    flex-basis: 49.2%;
+    
+    display: flex;
+    align-items: center;
+}
+#nav {
+    justify-content: center;
+}
+
+#header-banner, #intro {
+    background-color: lightgray;
+    margin: 10px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#header-banner {
+    min-height: 100px;
+}
+#intro {
+    min-height: 80px;
+}
+
+#boxes {
+    min-height: 300px;
+    margin: 10px auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+.box {
+    background-color: lightgray;
+    
+    flex-basis: 32%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer {
+    background-color: lightgray;
+    min-height: 100px;
+    margin: 10px auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer a {
+    text-decoration: none;
+    color: black;
+    padding: 35px 100px;
+}
+#footer a:hover {
+    background-color: aliceblue;
+}

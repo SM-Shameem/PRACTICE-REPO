@@ -1,0 +1,539 @@
+body {
+  background-color: burlywood;
+}
+
+div {
+  padding: 20px;
+}
+
+h4 {
+  color: chocolate;
+  text-decoration: underline;
+  padding: 10px;
+}
+
+/*
+# CSS Background Properties 
+- background-color
+- background-image
+- background-repeat
+- background-position
+- background-attachment
+- background (short-hand property)
+
+- background-clip
+- background-origin 
+- background-size
+*/
+
+.div_ha {
+  background: #DDD url('../ASSETS/imageOne.jpg') center fixed;
+  height: 500px;
+}
+
+.div_hb {
+  background: rgb(50, 75, 50) url('../ASSETS/imageTwo.jpg') no-repeat fixed;
+  height: 500px;
+}
+
+.div_hc {
+  background: gray url('../ASSETS/imageTwo.jpg') no-repeat center fixed;
+  height: 500px;
+}
+
+.div_hd {
+  background: url('../ASSETS/imageOne.jpg') no-repeat fixed 200px;
+  height: 500px;
+}
+
+/* --------------------------------------------------------------------- */
+.div_aa {
+  background-color: #48D;
+}
+
+.div_ab {
+  background-color: rgb(200, 50, 150);
+}
+
+.div_ac {
+  background-color: rgba(50, 200, 50, .4);
+}
+
+.div_ad {
+  background-color: #D4D;
+  opacity: .2;
+}
+
+.div_ae {
+  background-color: cadetblue;
+  opacity: .4;
+}
+
+.div_ae div {
+  background-color: darkorange;
+}
+
+.div_af {
+  background-color: rgba(50, 75, 25, .4);
+}
+
+.div_af div {
+/*  background-color: initial;*/
+  background-color: inherit;  
+}
+
+/* --------------------------------------------------------------------- */
+.div_ba {
+  background-image: url('../ASSETS/imageOne.jpg');
+}
+
+.div_bb {
+  background-image: url('../ASSETS/imageSix.jpg'), url('../ASSETS/imageSeven.jpg');
+}
+
+.div_bc {
+  background-image: conic-gradient(red, yellow, green);
+}
+
+.div_bd {
+  background-image: linear-gradient(pink 10%, blue 80%, orange 50%);
+}
+
+.div_be {
+  background-image: radial-gradient(silver, #D48, rgb(100, 100, 50) 80%);
+  opacity: .8;
+}
+
+.div_be div {
+  background-image: url('../ASSETS/imageFour.jpg');
+}
+
+.div_bf {
+  background-image: repeating-conic-gradient(black, white);
+  opacity: .6;
+}
+
+.div_bf div {
+  background-image: none;
+}
+
+/* --------------------------------------------------------------------- */
+.div_ca {
+  background-image: url('../ASSETS/imageSix.jpg');
+  height: 1400px;
+}
+
+.div_cb {
+  background-color: gray;
+  background-image: url('../ASSETS/imageSix.jpg');
+  height: 1400px;
+/*  background-repeat: repeat;*/
+  background-repeat: repeat-x;
+}
+
+.div_cc {
+  background-color: gray;
+  background-image: url('../ASSETS/imageSix.jpg');
+  height: 1400px;
+  background-repeat: repeat-y;
+}
+
+.div_cd {
+  background-color: gray;
+  background-image: url('../ASSETS/imageSix.jpg');
+  height: 1400px;
+  background-repeat: no-repeat;
+}
+
+.div_ce {
+  background-color: gray;
+  background-image: url('../ASSETS/imageSix.jpg');
+  height: 1400px;
+  background-repeat: space;
+/*  opacity: .4;*/
+}
+
+.div_cf {
+  background-color: gray;
+  background-image: url('../ASSETS/imageSix.jpg');
+  height: 1400px;
+  background-repeat: round;
+  opacity: .4;
+}
+
+.div_ce div {
+  background-image: linear-gradient(blue, green, yellow);
+/*  background-repeat: round;*/
+}
+
+.div_cf div {
+  background-image: repeating-radial-gradient(black, white 50%);
+/*  background-repeat: space;*/
+}
+
+/* --------------------------------------------------------------------- */
+.div_da {
+  background-color: silver;
+/*  background-image: conic-gradiant(black, white);*/
+  background-image: url('../ASSETS/imageSeven.jpg');
+  background-repeat: no-repeat;
+  height: 1400px;
+  
+  background-position: left top;
+}
+
+.div_db {
+  background-color: gray;
+  background-image: url('../ASSETS/imageSeven.jpg');
+  background-repeat: no-repeat;
+  height: 1400px;
+  
+/*  background-position: right top;*/
+/*  background-position: center top;*/
+/*  background-position: left bottom;*/
+/*  background-position: bottom right;*/
+/*  background-position: bottom center;*/
+  background-position: center center;
+}
+
+.div_dc {
+  background-color: silver;
+  background-image: url('../ASSETS/imageSeven.jpg');
+  background-repeat: no-repeat;
+  height: 1400px;
+  
+  background-position: bottom;
+  background-position: top;
+  background-position: right;
+  background-position: center;
+}
+
+.div_dd {
+  background-color: gray;
+  background-image: url('../ASSETS/imageSeven.jpg');
+  background-repeat: no-repeat;
+  height: 1400px;
+  
+/*  background-position: 10% 20%;*/
+  background-position: 100px 200px;
+  opacity: .5;
+}
+
+.div_de {
+  background-color: silver;
+  background-image: radial-gradient(black, white);
+  background-repeat: no-repeat;
+  height: 1400px;
+  
+  background-position: 200px 200px;
+  opacity: .7;
+}
+
+.div_df {
+  background-color: gray;
+  background-image: linear-gradient(green, yellow, red);
+  background-repeat: no-repeat;
+  height: 700px;
+  
+  background-position: 25% 25%;
+  opacity: .5;
+}
+
+.div_de div {
+  background-image: url('../ASSETS/imageSeven.jpg');
+  background-repeat: no-repeat;
+  height: 50%;
+  
+  background-position: 10%;
+}
+
+.div_df div {
+  background-color: silver;
+  background-image: url('../ASSETS/imageSeven.jpg');
+  background-repeat: no-repeat;
+  height: 50%;
+  
+  background-position: 20%;
+}
+
+/* --------------------------------------------------------------------- */
+.div_ea {
+  background-color: gray;
+  background-image: url('../ASSETS/imageOne.jpg');
+  height: 1500px;
+  
+  background-attachment: fixed;
+}
+
+.div_eb {
+  background-color: silver;
+  background-image: url('../ASSETS/imageTwo.jpg');
+  height: 1500px;
+  
+  background-attachment: scroll;
+}
+
+.div_ec {
+  background-color: gray;
+  background-image: url('../ASSETS/imageThree.jpg');
+  height: 1500px;
+  
+  background-attachment: local;
+}
+
+.div_ed {
+  background-image: linear-gradient(yellow, green);
+  height: 1000px;
+  
+  background-attachment: local;
+}
+
+.div_ee {
+  background-image: radial-gradient(pink, blue);
+  height: 1000px;
+  color: yellow;
+  
+  background-attachment: scroll;
+}
+
+.div_ef {
+  background-image: url('../ASSETS//imageFour.jpg');
+  height: 1000px;
+  color: yellow;
+  
+  background-attachment: scroll;
+}
+
+.div_eg {
+  background-image: url('../ASSETS/imageFive.jpg');
+  height: 1000px;
+  color: yellow;
+  
+  background-attachment: fixed;
+}
+
+.div_eh {
+  background-image: radial-gradient(green, red);
+  height: 1000px;
+  color: yellow;
+  
+  background-attachment: fixed;
+}
+
+.div_ee div {
+  background-image: url('../ASSETS/imageOne.jpg');
+  height: 50%;
+  color: yellow;
+  
+  background-attachment: scroll;
+}
+
+.div_ef div {
+  background-image: linear-gradient(black, white);
+  height: 50%;
+  color: yellow;
+  
+  background-attachment: fixed;
+}
+
+.div_eg div {
+  background-image: url('../ASSETS/imageOne.jpg');
+  height: 50%;
+  color: yellow;
+  
+  background-attachment: scroll;
+}
+
+.div_eh div {
+  background-image: url('../ASSETS/imageTwo.jpg');
+  height: 50%;
+  color: yellow;
+  
+  background-attachment: fixed;
+}
+
+/* --------------------------------------------------------------------- */
+.div_fa {
+  background-image: url('../ASSETS/imageOne.jpg');
+  background-repeat: no-repeat;
+  border: solid 5px red;
+  padding: 20px;
+  height: 100px;
+  color: yellow;
+  
+  background-clip: content-box;
+}
+
+.div_fb {
+  background-image: url('../ASSETS/imageTwo.jpg');
+  background-repeat: no-repeat;
+  border: solid 5px red;
+  padding: 20px;
+  height: 100px;
+  color: yellow;
+  
+  background-clip: padding-box;
+}
+
+.div_fc {
+  background-image: url('../ASSETS/imageThree.jpg');
+  background-repeat: no-repeat;
+  border: solid 5px red;
+  padding: 20px;
+  height: 100px;
+  color: yellow;
+  
+  background-clip: border-box;
+}
+
+.div_fg {
+  background-image: linear-gradient(red, yellow);
+  border: solid 5px red;
+  padding: 20px;
+  height: 100px;
+  color: yellow;
+  
+  background-clip: content-box;
+}
+
+.div_fg div {
+  background-color: blueviolet;
+  border: solid 5px red;
+  padding: 20px;
+  height: 50%;
+  opacity: .4;
+  
+  background-clip: padding-box;
+}
+
+/* --------------------------------------------------------------------- */
+.div_fd {
+  background-image: url('../ASSETS/imageFour.jpg');
+  background-repeat: no-repeat;
+  border: solid 5px red;
+  padding: 20px;
+  height: 100px;
+  color: yellow;
+  
+  background-origin: content-box;
+}
+
+.div_fe {
+  background-image: url('../ASSETS/imageFive.jpg');
+  background-repeat: no-repeat;
+  border: solid 5px red;
+  padding: 20px;
+  height: 100px;
+  color: yellow;
+  
+  background-origin: padding-box;
+}
+
+.div_ff {
+  background-image: url('../ASSETS/imageOne.jpg');
+  background-repeat: no-repeat;
+  border: solid 5px red;
+  padding: 20px;
+  height: 100px;
+  color: yellow;
+  
+  background-origin: border-box;
+}
+
+.div_fh {
+  background-color: aqua;
+  border: solid 5px red;
+  padding: 20px;
+  height: 100px;
+  color: yellow;
+  
+  background-origin: content-box;
+}
+
+.div_fh div {
+  background-color: beige;
+  border: solid 5px red;
+  padding: 20px;
+  height: 50%;
+  
+  background-origin: border-box;
+}
+
+/* --------------------------------------------------------------------- */
+.div_ga {
+  background-image: url('../ASSETS/imageOne.jpg');
+  background-repeat: no-repeat;
+  border: solid 5px red;
+  padding: 20px;
+  height: 500px;
+  color: yellow;
+  
+  background-size: cover;
+}
+
+.div_gb {
+  background-image: url('../ASSETS/imageOne.jpg');
+  background-repeat: no-repeat;
+  border: solid 5px red;
+  padding: 20px;
+  height: 500px;
+  color: yellow;
+  
+  background-size: contain;
+}
+
+.div_gc {
+  background-image: linear-gradient(black, white);
+  border: solid 5px red;
+  padding: 20px;
+  height: 500px;
+  
+  background-size: cover;
+}
+
+.div_gd {
+  background-image: linear-gradient(black, white);
+  border: solid 5px red;
+  padding: 20px; 
+  height: 500px;
+  
+  background-size: contain;
+}
+
+.div_ge {
+  background-image: url('../ASSETS/imageTwo.jpg');
+  border: solid 5px red;
+  padding: 20px;
+  height: 500px;
+
+  background-size: 40% 60%;
+}
+
+.div_gf {
+  background-image: url('../ASSETS/imageTwo.jpg');
+  border: solid 5px red;
+  padding: 20px;
+  height: 500px;
+
+  background-size: 200px;
+}
+
+.div_ge div {
+  background-image: url('../ASSETS/imageOne.jpg');
+  border: solid 5px red;
+  padding: 20px;
+  height: 500px;
+
+  background-clip: content-box;
+  background-size: cover;
+}
+
+.div_gf div {
+  background-image: url('../ASSETS/imageOne.jpg');
+  border: solid 5px red;
+  padding: 20px;
+  height: 500px;
+
+  background-clip: content-box;
+  background-size: contain;
+}
