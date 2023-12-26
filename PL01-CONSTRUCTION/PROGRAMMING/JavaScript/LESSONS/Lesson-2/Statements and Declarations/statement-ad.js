@@ -6,4 +6,4 @@
 // 3. for
 // 4. for .. in
 // 5. for .. of
-// 6. for await .. ofke 
+// 6. for await .. 

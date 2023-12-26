@@ -260,7 +260,7 @@ console.log('\n');
 // -----------------------------------------------------------------------
 // JAVASCRIPT SCOPE
 // -----------------------------------------------------------------------
-// 01 in javascript (objects | functions    ) are also variable
+// 01 in javascript (objects | functions) are also variable
 // -- scope determine the accessibility of variable
 // -- there are 3 (three) scopes in javascript - (GLOBAL | LOCAL | BLOCK)
 // -- life time of a (global) variable - from opening web page till closing
