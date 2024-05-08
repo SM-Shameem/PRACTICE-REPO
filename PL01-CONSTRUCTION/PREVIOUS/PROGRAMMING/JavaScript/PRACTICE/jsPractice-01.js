@@ -13,7 +13,8 @@ let out = (arg = '\n') => console.log(arg);
 // ----- 01. variable-declaration-keywords ------------------------------------
 // ============================================================================
 function example_one() {
-    out('variable declaration keyword .................');
+    out('01. variable declaration keyword .................');
+
     var localScopeOne = function () {
         // variable declaration keywords 
         // undeclared variable 
@@ -54,9 +55,8 @@ function example_one() {
         out('local_global : ' + local_global);
     }
 
+    // ------------------------------------------------------------
     var localScopeTwo = function () {
-        
-        // ------------------------------------------------------------
         var local_var;
         let local_let;
 
@@ -83,7 +83,8 @@ function example_one() {
 // ----- 02. scope-of-variable-declaration-keywords ---------------------------
 // ============================================================================
 function example_two() {
-    out('scope of variable declaration keywords .................');
+    out('02. scope of variable declaration keywords .................');
+
     var global_var = 1111;
     let global_let = 2222;
     const global_const = 3333;
@@ -169,7 +170,7 @@ function example_two() {
 // ----- 03. hosting-of-variable-declaration-keywords -------------------------
 // ============================================================================
 function example_three() {
-        out('hosting of variable declaration keywords .................');
+        out('03. hosting of variable declaration keywords .................');
         out('local_var   : ' + local_var);
         // out('local_let   : ' + local_let);
         // out('local_const : ' + local_const);
@@ -192,7 +193,8 @@ function example_three() {
 // ----- 04. function & class-declaration-keywords ----------------------------
 // ============================================================================
 function example_four() {
-    out('function & class keywords .................');
+    out('04. function & class keywords .................');
+    
     function localFunc() {
         out('func-1');
         return 'localFunc ...';
@@ -208,10 +210,26 @@ function example_four() {
         }
     }
 
+    class localDerived extends localClass {
+        constructor() {
+            super(arguments[0]);
+            this.proTwo = arguments[1];
+        }
+        methodDerived() {
+            return this.proOne + this.proTwo;
+        }
+
+    }
+
     // ------------------------------------------------------------
-    var localObject = new localClass('localClass ...');
     out('localFunc   : ' + localFunc());
+
+    var localObject = new localClass('localClass ...');
     out('localObject : ' + localObject.method());
+
+    var localInstance = new localDerived(30, 20);
+    out('localInstance : ' + localInstance.method());
+    out('localInstance : ' + localInstance.methodDerived());
 
     // ------------------------------------------------------------
     // -- not acts like polymorphism and 
@@ -232,7 +250,7 @@ function example_four() {
 // ----- 05. scope and hosting of function & class-declaration-keywords -------
 // ============================================================================
 function example_five() {
-    out('scope and hosting of function and class keyword .................');
+    out('05. scope and hosting of function and class .................');
     // function 
     // class 
     // function-expression (using var | let)
@@ -333,6 +351,7 @@ function example_five() {
 // ----- 06. scope and hosting of array & object ------------------------------
 // ============================================================================
 function example_six() {
+    out('06. scope and hosting of array & object .................');
     var localFunc = function() {
         out('varArray      : ' + varArray);
         // out('letArray      : ' + letArray);
@@ -451,6 +470,7 @@ function example_six() {
 // ----- 07. user-define identifier conventions & declaration span ------------
 // ============================================================================
 function example_seven() {
+    out('07. user-define identifier conventions & declaration span .......');
     var x;
     var xyz;
     var sum;
@@ -490,26 +510,35 @@ function example_seven() {
 // ----- 08. using (strict) mode-1 --------------------------------------------
 // ============================================================================
 function example_eight() {
+    out('08. using (strict) mode-1 .................');
     // -- using a variable without declaring it, is not allowed
     // -- using an object without declaring it, is not allowed
-    // -- writing to a read-only property is not allowed
-    // -- writing to a get-only property is not allowed
-    // -- deleting an undetectable property is not allowed
     // -- deleting variable and object is not allowed
     // -- deleting function is not allowed
+    // -- deleting an undetectable property is not allowed
     // -- duplicating parameter name is not allowed
+    // -- writing to a read-only property is not allowed
+    // -- writing to a get-only property is not allowed
 
     let funcOne = function() {
         'use strict'
-        // localVar = null;
-        localObject = {
-            proOne: 11,
+        
+        // globalVar = null;
+        // globalObject = {
+        //     proOne: 11,
+        //     method: function() {
+        //         return this.proOne;
+        //     }
+        // }
+
+        var localVar = null;
+        var localObject = {
+            proOne: 22,
             method: function() {
                 return this.proOne;
             }
         }
 
-        // ------------------------------------------------------------
         // localConstructor = function() {
         //     this.proOne = arguments[0];
         //     this.method = function() {
@@ -518,20 +547,181 @@ function example_eight() {
         //     return this.proOne;
         // }
 
-        // var localObjectTwo = new localConstructor(1);
+        // var localInstance = new localConstructor(1);
+
+        // out('globalVar : ' + globalVar);
+        // out('globalObject.method : ' + globalObject.method());
+        out('localVar : ' + localVar);
+        out('localObject.method : ' + localObject.method());
+        // out('localInstance.method : ' + localInstance.method());
+    }
+
+    // ------------------------------------------------------------
+    var funcTwo = function() {
+        'use strict'
+
+        var localVar = null;
+        var localArray = [];
+        var localObject = { };
+        var localExp = function() { return 10; };
+        function localFunc() { return 20; }
+
+        // delete localVar;
+        // delete localArray;
+        // delete localObject;
+        delete localExp();
+        delete localFunc();
+
+        out('localVar    : ' + localVar);
+        out('localArray  : ' + localArray);
+        out('localObject : ' + localObject);
+        out('localExp    : ' + localExp);
+        out('localExp    : ' + localExp());
+        out('localFunc   : ' + localFunc);
+        out('localFunc   : ' + localFunc());   
+
+        localArray[0] = 11;
+        localObject.pro = 22;
+
+        delete localArray[0];
+        delete localObject.pro;
+
+        out('localArray[0]   : ' + localArray[0]);
+        out('localObject.pro : ' + localObject.pro);
 
         // ------------------------------------------------------------
-        // out('localVar : ' + localVar);
+        var localConst = function() {
+            this.proOne = arguments[0];
+            this.porTwo = arguments[1];
+            this.method = function() {
+                return this.proOne + this.porTwo;
+            };
+        };
+
+        var localInst = new localConst(11, 22);
+        var localInstTwo = new localConst(10, 20);
+
+        // delete localConst.prototype.proOne;
+        delete localInst.proOne;
+
+        localConst.prototype.proThree = 10;
+        localConst.prototype.methodTwo = function() {
+            return this.proOne + this.proTwo + this.proThree;
+        }
+
+        // delete localInst.proThree; 
+        // delete localInstTwo.proThree;
+
+        out('localInst.method       : ' + localInst.method());
+        out('localInstTwo.method    : ' + localInstTwo.method());
+        out('localInst.proThree     : ' + localInst.proThree);
+        out('localInstTwo.proThree  : ' + localInstTwo.proThree);
+        out('localInst.methodTwo    : ' + localInst.methodTwo());
+        out('localInstTwo.methodTwo : ' + localInstTwo.methodTwo());
+    }
+
+    // ------------------------------------------------------------
+    function funcThree() {
+        'use strict'
+
+        function funcOne(argOne, argTwo) { return argOne + argTwo; }
+        // function funcTwo(arg, arg) { return arg + arg; }
+        // var funcThree = function(arg, arg) { return arg + arg; };
+        // var funcFour = (arg, arg) => arg + arg; (error in non-strict mode)
+
+        out('funcOne : ' + funcOne(1, 2));
+        // out('funcTwo : ' + funcTwo(2, 3));
+        // out('funcThree : ' + funcThree(3, 4));
+        // out('funcFour : ' + funcFour(4, 5));
+    }
+
+    // ------------------------------------------------------------
+    function funcFour() {
+        'use strict'
+
+        var localObject = {
+            proOne: null,
+            proTwo: null,
+            method: function() {
+                return this.proOne + this.proTwo;
+            }
+        }
+
+        localObject.proOne = 11;
+        localObject.proTwo = 22;
         out('localObject.method : ' + localObject.method());
-        // out('localObjectTwo.method : ' + localObjectTwo.method());
+
+        Object.defineProperty(localObject, 'proThree', {
+            value: localObject.proOne
+        });
+        out('localObject.proThree : ' + localObject.proThree);
+
+        Object.defineProperty(localObject, 'GetSet', {
+            set: function(arg) { 
+                localObject.proTwo = arg + arg;
+                // localObject.proThree = arg * arg;
+            }
+        });
+        Object.defineProperty(localObject, 'SetGet', {
+            get: function() { return localObject.proTwo + localObject.proThree }
+        });
+
+        localObject.GetSet = 44;
+        out('localObject.SetGet : ' + localObject.SetGet);
+
+        // ------------------------------------------------------------
+        let localObject_two = {
+            proOne: null,
+            proTwo: null,
+            method: function() {
+                return this.proOne + this.proTwo;
+            },
+            // set() {
+            //     this.proOne = arguments[0];
+            //     this.proTwo = arguments[1];
+            // },
+            get() {
+                return this.method();
+            }
+        };
+
+        localObject_two.set = [111, 222];
+        out('localObjet_two : ' + localObject_two.get());
+
+        // ------------------------------------------------------------
+        let localConstructor = function () {
+            this.proOne = null;
+            this.proTwo = null;
+            this.method = function() {
+                return this.proOne + this.proTwo;
+            }
+        }
+        Object.defineProperty(localConstructor, 'getSet', {
+            get: function() {
+                return this.method();
+            }
+        });
+        Object.defineProperty(localConstructor, 'proThree', { 
+            value: null 
+        });
+        Object.defineProperty(localConstructor, 'prototype.proFour', { 
+            value: null 
+        });
+
+        let localObjectThree = new localConstructor();
+        out('localObjectThree.get : ' + localObjectThree.get);
+
+        localObjectThree.proThree = 10;
+        localObjectThree.proFour = 20;
+        out('localObjectThree.proThree : ' + localObjectThree.proThree);
+        out('localObjectThree.proFour  : ' + localObjectThree.proFour);
     }
 
     // ------------------------------------------------------------
     funcOne();
-    // out('localVar : ' + localVar);
-    out('localObject.method : ' + localObject.method());
-    // out('localObjectTwo.method : ' + localObjectTwo.method());
-    // out('localConstructor : ' + localConstructor(22)); 
+    funcTwo();
+    funcThree();
+    funcFour();
 }
 
 
@@ -540,12 +730,72 @@ function example_eight() {
 // ----- 09. using (strict) mode-2 --------------------------------------------
 // ============================================================================
 function example_nine() {
+    out('09. using (strict) mode-2 .................');
     // -- octal numeric literals are not allowed
     // -- octal escape characters are not allowed
     // -- the (this) keyword in function behave differently -
     //    the (this) keyword refers to the object that called the function
     //    if the object is not specified, function will return (undefine)
     //    but in normal mode function will return global object (window)
+    // -- function with non-simple parameter list
+
+    function funcOne() {
+        'use strict'
+
+        var local_a = 48;
+        var local_b = 0x48;
+        // var local_c = 048;
+
+        out('local_a (48)   : ' + local_a);
+        out('local_b (0x48) : ' + local_b);
+        // out('local_c (048)  : ' + local_c);
+    }
+
+    function funcTwo() {
+        function localFunc_a() {
+            'use strict'
+            out('value of (this) with strict : ' + this);
+        }
+
+        function localFunc_b() {
+            out('value of (this) without strict : ' + this);
+        }
+
+        'use strict'    
+        function localFunc_c() {
+            this.proOne = 11;
+            this.proTwo = 22;
+            this.method = function() {
+                return this.proOne + this.proTwo;
+            };
+        }
+
+        var localInstance = new localFunc_c();
+        out('localInstance : ' + localInstance.method());
+
+        localFunc_a();
+        localFunc_b();
+    }
+
+    function funcThree() {
+        function localFunc_a(argOne = 10, argTwo = 20) {
+            // 'use strict'
+            return argOne + argTwo;
+        }
+
+        function localFunc_b(argOne, argTwo) {
+            'use strict'
+            return argOne + argTwo;
+        }
+
+        out('localFunc_a : ' + localFunc_a());
+        out('localFunc_b : ' + localFunc_b(11, 22));
+    }
+
+    // ------------------------------------------------------------
+    funcOne();
+    funcTwo();
+    funcThree();
 }
 
 
@@ -554,16 +804,51 @@ function example_nine() {
 // ----- 10. using (strict) mode-3 --------------------------------------------
 // ============================================================================
 function example_ten() {
+    out('10. using (strict) mode-3 .................');
     // -- the (eval) cannot be used as a variable
     // -- word (arguments) cannot be used as a variable
     // -- keywords for future javascript version can not be used as variable
     //    implements | interface | let | package
     //    private | public | protected | static | yield
 
-    // -- the (with) statement is not allowed
     // -- the (eval()) is not allowed to create variable in the calling scope
     // -- the (eval()) can not declare a variable using the (var) keyword
     // -- the (eval()) can not declare a variable using the (let) keyword  
+    // -- the (with) statement is not allowed
+    
+    function funcOne() {
+        // 'use strict'
+
+        var eval = null;
+        var arguments = null;
+        var implements = null;
+        var interface = null;
+        var let = null;
+        var package = null;
+        var private = null; 
+        var public = null;
+        var protected = null; 
+        var static = null; 
+        var yield = null;
+    }
+
+    function funcTwo() {
+        // 'use strict'
+
+        eval('x = 10');
+        eval('var y = 20');
+        // eval('let z = 30');
+        eval('const i = 40');
+        
+        out('x : ' + x);
+        out('y : ' + y);
+        // out('z : ' + z);
+        // out('i : ' + i);
+    }
+
+    // ------------------------------------------------------------
+    funcOne();
+    funcTwo();
 }
 
 

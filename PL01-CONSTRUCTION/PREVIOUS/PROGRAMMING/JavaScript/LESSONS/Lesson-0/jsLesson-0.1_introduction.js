@@ -129,7 +129,7 @@
 // -- with the advent of (WebAssembly) some engines can also execute this code 
 //    in the same sandbox as regular javascript code 
 
-//    ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
 // Programming Paradigms 
 // ---------------------------------------------------------------------------
 // 01 programming paradigms are a way to classify programming language based on features
