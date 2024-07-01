@@ -1,7 +1,6 @@
 let out = (arg = '\n') => console.log(arg);
-// # ITERATOR | ERROR STATEMENTS ||||||||||||||||||||||||||||||||||||||||||||||
+// # ITERATOR |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 // 1. iterator statements (for | for .. in | for .. of)
-// 2. error statements (try .. catch .. finally | throw)
 
 // ============================================================================
 // ----- 04. iterator-statement and (for) keyword -----------------------------
@@ -728,43 +727,8 @@ function example_six() {
 
 
 // ============================================================================
-// ----- 07. iterator-statement and try..catch..finally keyword ---------------
-// ============================================================================
-function example_seven() {
-    // 1. try..catch..finally
-    // 2. syntax (tryStatement | catchStatement | finallyStatement)
-    // 3. description 
-    // -> catch binding 
-    // -> the finally block
-    // 4. examples 
-    // -> unconditional catch block 
-    // -> conditional catch blocks
-    // -> nested try blocks 
-    // -> returning from a finally block
-}
-
-
-
-// ============================================================================
-// ----- 08. iterator-statement and throw keyword -----------------------------
-// ============================================================================
-function example_eight() {
-    // 1. throw
-    // 2. syntax (expression)
-    // 3. description 
-    // -> automatic semicolon insertion 
-    // 4. examples 
-    // -> throwing a user-defined error 
-    // -> throwing an existing object 
-}
-
-
-
-// ============================================================================
 // ----- examples -------------------------------------------------------------
 // ============================================================================
 out(); example_four();
 out(); example_five();
 out(); example_six();
-out(); example_seven();
-out(); example_eight();

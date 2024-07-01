@@ -1,5 +1,7 @@
 let out = (arg = '\n') => console.log(arg);
-// 1. other statements (debugger | with)
-// 2. import | export statements 
-// 3. keywords
-// 4. events 
+// 1. operators 
+// 2. additional operators 
+// 3. bitwise operators 
+// 4. operator precedency 
+// 5. expression 
+// 6. RegExp
