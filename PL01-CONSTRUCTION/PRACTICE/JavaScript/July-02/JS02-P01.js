@@ -23,6 +23,7 @@ const example_aa = function () {
     var_aa = 10;
     let_aa = 20;
     const_aa = 30;
+    
     out('var_aa   - ' + var_aa);
     out('let_aa   - ' + let_aa);
     out('const_aa - ' + const_aa);
