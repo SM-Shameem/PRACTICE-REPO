@@ -1,6 +1,6 @@
--------------------------------------------------------------------------------
+===============================================================================
 Core Modules 
--------------------------------------------------------------------------------
+===============================================================================
 01.	The Core modules cover topics that we feel every web developer should have a 
     good grounding in
 --	This includes all the information they need to design and build a basic, 
@@ -187,8 +187,9 @@ Version Control
 ---------------------------
 01. Version control tools are an essential part of modern workflows, for backing 
     up and collaborating on code-bases 
-02. This module through the essentials of version control using Git and GitHub 
-03. Learning outcomes – 
+--  This module through the essentials of version control using Git and GitHub 
+
+02. Learning outcomes – 
     a)	Understand why version control systems are necessary 
     #	Notes – 
     -   Git and associated social coding sites like GitHub have a lot of 
@@ -218,3 +219,4 @@ Version Control
     #   Delete branches you have finished with 
     k)  Handling merge conflicts 
 
+03. Resources - Git and GitHub

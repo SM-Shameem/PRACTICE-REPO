@@ -1,6 +1,6 @@
--------------------------------------------------------------------------------
+===============================================================================
 Extensions Modules 
--------------------------------------------------------------------------------
+===============================================================================
 01. These extension modules constitute useful additional skills to learn as web 
     developers start to expand their knowledge and develop specialisms 
 
@@ -73,15 +73,10 @@ Web APIs
 
 03.	General resources – Client-side web APIs
 
-04.	Topics are below – 
+04.	Topics are below –
     a)	Video and audio APIs
     b)  Graphics/animation APIs
     c)  Client-Side storage 
-
-05. Resources - 
-    >   Client-side storage 
-    >   Using HTTP cookies 
-    >   What is a progressive web app
 
 
 ---------------------------
@@ -93,7 +88,7 @@ Performance
     progress and getting initial content to a usable state as fast as 
     possible, even if all the content is not yet loaded)
 
-02. Topics are below – 
+02. Topics are below –
     a)  Performance basics 
     b)  Improving page rendering 
     c)  Measuring performance 
@@ -114,7 +109,7 @@ Security and Privacy
     >   Privacy on the web 
     >   Learn privacy (web.dev 2023) 
 
-03.	Topics are below – 
+03.	Topics are below – ---
     a)	Security and privacy basics 
     b)  Data protection laws 
 
@@ -128,7 +123,7 @@ Testing
     to meet the users’ needs. 
 --	This module lists the fundamentals that you should start with 
 
-02.	Topics are below – 
+02.	Topics are below – ---
     a)	General testing fundamentals 
     b)  Functional and compact testing 
     c)  Usability testing 
@@ -180,7 +175,6 @@ JavaScript Frameworks
     #   Styling system to apply CSS to your components 
     #   Dependency management 
     #   Extension system 
-
     c)  Understand the practicalities of working with a framework. 
         Most framework-related CLIs or development environments include – 
     #   A local testing server that refreshes on file save 
@@ -209,7 +203,7 @@ CSS tooling
 --	There are also common CSS tooling types that you’ll encounter on your 
     learning journey 
 
-02.	Topics are below – 
+02.	Topics are below – ---
     a)  CSS frameworks 
     b)  CSS preprocessor 
 
@@ -218,7 +212,7 @@ CSS tooling
 Other Tooling Types 
 ---------------------------
 01.	Notes – 
-    This set of criteria doesn’t require having an in-depth knowledge of 
+--  This set of criteria doesn’t require having an in-depth knowledge of 
     the tools listed below; instead, students are encouraged to learn the 
     basic concepts of why and how they are used (and where in a web app project), 
     test them out, and play with usage examples 
